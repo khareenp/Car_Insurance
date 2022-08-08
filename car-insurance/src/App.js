@@ -29,28 +29,29 @@ function App() {
   ];
 
   return (
-    <div className=" flex flex-col space-y-4 w-full h-screen bg-slate-600">
-      <h2 className="text-4xl">Let's get started!</h2>
-      <ExpenseItem
-        title={expenses[0].title}
-        amount={expenses[0].amount}
-        date={expenses[0].date}
-      />
-      <ExpenseItem
-        title={expenses[1].title}
-        amount={expenses[1].amount}
-        date={expenses[1].date}
-      />
-      <ExpenseItem
-        title={expenses[2].title}
-        amount={expenses[2].amount}
-        date={expenses[2].date}
-      />
-      <ExpenseItem
-        title={expenses[3].title}
-        amount={expenses[3].amount}
-        date={expenses[3].date}
-      />
+    <div className=" flex flex-col w-full h-screen bg-slate-600 items-center justify-center">
+      <div className="flex flex-col space-y-4 border-none rounded-lg p-4 w-3/6 bg-slate-900">
+        <ExpenseItem
+          title={expenses[0].title}
+          amount={expenses[0].amount}
+          date={expenses[0].date}
+        />
+        <ExpenseItem
+          title={expenses[1].title}
+          amount={expenses[1].amount}
+          date={expenses[1].date}
+        />
+        <ExpenseItem
+          title={expenses[2].title}
+          amount={expenses[2].amount}
+          date={expenses[2].date}
+        />
+        <ExpenseItem
+          title={expenses[3].title}
+          amount={expenses[3].amount}
+          date={expenses[3].date}
+        />
+      </div>
     </div>
   );
 }
