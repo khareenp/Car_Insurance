@@ -12,7 +12,7 @@ function ExpenseItem(props) {
         </h2>
       </div>
 
-      <div className="expense-item__price bg-indigo-500 text-2xl p-4 border-2 rounded-2xl text-slate-50">
+      <div className="expense-item__price bg-sky-500 text-2xl p-4 border-2 rounded-2xl text-slate-50">
         ${props.amount}
       </div>
     </div>
