@@ -2,7 +2,7 @@ import ExpenseDate from "./ExpenseDate/ExpenseDate";
 
 const ExpenseItem = (props) => {
   return (
-    <div className="expense-item flex justify-between bg-slate-400 p-4 items-center rounded-lg">
+    <div className="expense-item flex justify-between bg-slate-400 p-4 items-center rounded-lg shadow-lg">
       <div className="flex space-x-8 items-center">
         <div className="expense-item__date text-2xl">
           <ExpenseDate date={props.date} />
