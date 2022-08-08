@@ -1,6 +1,6 @@
 import ExpenseDate from "./ExpenseDate/ExpenseDate";
 
-function ExpenseItem(props) {
+const ExpenseItem = (props) => {
   return (
     <div className="expense-item flex justify-between bg-slate-400 p-4 items-center rounded-lg">
       <div className="flex space-x-8 items-center">
@@ -17,6 +17,6 @@ function ExpenseItem(props) {
       </div>
     </div>
   );
-}
+};
 
 export default ExpenseItem;
