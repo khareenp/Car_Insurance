@@ -30,7 +30,7 @@ const App = () => {
 
   return (
     <div className=" flex flex-col w-full h-screen bg-slate-600 items-center justify-center">
-      <div className="flex flex-col space-y-4 border-none rounded-lg p-4 w-3/6 bg-slate-900">
+      <div className="flex flex-col space-y-4 border-none rounded-lg px-4 py-8 w-3/6 bg-slate-900">
         <ExpenseItem
           title={expenses[0].title}
           amount={expenses[0].amount}
