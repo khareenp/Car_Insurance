@@ -33,7 +33,7 @@ const ExpenseForm = () => {
             />
           </div>
         </div>
-        <div className="new-expense__actions">
+        <div className="new-expense__actions flex justify-end">
           <button
             type="submit"
             className="bg-sky-800 text-slate-50 p-2 rounded-lg"
