@@ -1,4 +1,5 @@
 import ExpenseItem from "./components/ExpenseItem";
+import NewExpense from "./components/NewExpense/NewExpense";
 
 const App = () => {
   const expenses = [
@@ -29,7 +30,8 @@ const App = () => {
   ];
 
   return (
-    <div className="body flex flex-col w-full h-screen bg-slate-600 items-center justify-center">
+    <div className="body flex flex-col w-full h-screen bg-slate-600 items-center justify-center space-y-8">
+      <NewExpense />
       <div className="Card flex flex-col space-y-4 border-none rounded-lg px-4 py-8 w-3/6 bg-sky-900">
         <ExpenseItem
           title={expenses[0].title}
