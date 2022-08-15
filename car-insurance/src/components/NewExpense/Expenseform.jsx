@@ -5,15 +5,33 @@ const ExpenseForm = () => {
   const [enteredAmount, setEnteredAmount] = useState("");
   const [enteredDate, setEnteredDate] = useState("");
 
+  //use 1 state for each event
+  // const [userInput, setUserInput] = useState({
+  //   enteredTitle: "",
+  //   enteredAmount: "",
+  //   enteredDate: "",
+  // });
+
   //event is passed to take in keystrokes
   const titleChangeHandler = (event) => {
     setEnteredTitle(event.target.value);
+
+    // setUserInput((prevState) => {
+    //   //if state update depends on previous state use this method
+    //   return { ...prevState, enteredTitle: event.target.value };
+    // });
   };
   const amountChangeHandler = (event) => {
     setEnteredAmount(event.target.value);
+    // setUserInput((prevState) => {
+    //   return { ...prevState, enteredAmount: event.target.value };
+    // });
   };
   const dateChangeHandler = (event) => {
     setEnteredDate(event.target.value);
+    // setUserInput((prevState) => {
+    //   return { ...prevState, enteredDate: event.target.value };
+    // });
   };
 
   return (
