@@ -29,6 +29,7 @@ const App = () => {
     },
   ];
 
+  //function created to pass data to
   const addExpenseHandler = (expense) => {
     console.log("In App.js");
     console.log(expense);
