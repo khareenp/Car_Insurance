@@ -29,9 +29,13 @@ const App = () => {
     },
   ];
 
+  const addExpenseHandler = (expense) => {
+    console.log("In App.js");
+    console.log(expense);
+  };
   return (
     <div className="body flex flex-col w-full h-screen bg-slate-600 items-center justify-center space-y-8">
-      <NewExpense />
+      <NewExpense onAddExpense={addExpenseHandler} />
       <div className="Card flex flex-col space-y-4 border-none rounded-lg px-4 py-8 w-3/6 bg-sky-900">
         <ExpenseItem
           title={expenses[0].title}
